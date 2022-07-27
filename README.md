@@ -29,11 +29,15 @@ npm install
 ```
 
 ## Running Manual
+```bash
 npm run dev
+```
 
 OR
 
+```bash
 ./node_modules/.bin/nodemon.cmd -e js
+```
 
 ## Running with Docker
 You can also run this app as a Docker container:
