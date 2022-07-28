@@ -13,7 +13,7 @@ using a global variable named as "persons".
 | Get All Persons       | /api/v1/persons              | GET      |             |
 | Create Person         | /api/v1/person               | POST     | cpf, name   |
 | Get Person            | /api/v1/person/:CPF          | GET      |             | 
-| Clean                 | /api/v1/clean                | DELETE   |             |
+| Clean All Data of RAM | /api/v1/clean                | DELETE   |             |
 | Create Relationship   | /api/v1/relationship         | POST     | cpf1, cpf2  |  
 | Get Recommendations   | /api/v1/recommendations/:CPF | GET      |             |  
 
