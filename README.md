@@ -2,13 +2,20 @@
 
 [![CircleCI](https://img.shields.io/circleci/project/github/contentful/the-example-app.nodejs.svg)](https://circleci.com/gh/contentful/the-example-app.nodejs)
 
-NodeJS APP to manipulate friends and your relationships:
+NodeJS APP to manipulate friends and your relationships.
 
-- List all persons registered
-- List specific person
-- Create a new person
-- Create a relationship between two people = friend relationship
-- List recommendations of friends
+
+## RESTful Routes
+
+| **Action**            | **URL**                      | **Verb** | **PAYLOAD** | 
+|-----------------------|------------------------------|----------|-------------|
+| Get All Persons       | /api/v1/persons              | GET      |             |
+| Create Person         | /api/v1/person               | POST     | cpf, name   |
+| Get Person            | /api/v1/person/:CPF          | GET      |             | 
+| Clean                 | /api/v1/clean                | DELETE   |             |
+| Create Relationship   | /api/v1/relationship         | POST     | cpf1, cpf2  |  
+| Get Recommendations   | /api/v1/recommendations/:CPF | GET      |             |  
+
 
 ## Requirements
 
