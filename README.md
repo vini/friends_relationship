@@ -2,7 +2,8 @@
 
 [![CircleCI](https://img.shields.io/circleci/project/github/contentful/the-example-app.nodejs.svg)](https://circleci.com/gh/contentful/the-example-app.nodejs)
 
-NodeJS APP to manipulate friends and your relationships.
+NodeJS APP to manipulate friends and your relationships, the data has stored in runtime (RAM),
+using a global variable named as "persons".
 
 
 ## RESTful Routes
