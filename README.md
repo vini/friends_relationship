@@ -1,6 +1,6 @@
 ## Friends Relationship
 
-[![CircleCI](https://img.shields.io/circleci/project/github/contentful/the-example-app.nodejs.svg)](https://circleci.com/gh/contentful/the-example-app.nodejs)
+[![Vinícius Sant'anna](https://img.shields.io/static/v1?label=NodeJS&message=Friends_Relationship&color=green)]
 
 NodeJS APP to manipulate friends and your relationships, the data has stored in runtime (RAM),
 using a global variable named as "persons".
@@ -70,3 +70,8 @@ Step 3: Run the Docker container locally:
 ```bash
 docker run -p 3000:3000 -d friends_relationship
 ```
+
+## Contact
+
+Vinícius Sant'anna
+E-mail: viniciusosantanna@gmail.com

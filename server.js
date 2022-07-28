@@ -1,3 +1,8 @@
+/* 
+Author: Vinícius Sant'anna
+E-mail: viniciusosantanna@gmail.com 
+*/
+
 //Global Variable
 global.persons = [];
 
