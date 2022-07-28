@@ -73,5 +73,4 @@ docker run -p 3000:3000 -d friends_relationship
 
 ## Contact
 
-Vinícius Sant'anna
-E-mail: viniciusosantanna@gmail.com
+Vinícius Sant'anna - viniciusosantanna@gmail.com
