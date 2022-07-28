@@ -28,6 +28,9 @@ Clone the repo and install the dependencies.
 
 ```bash
 git clone https://github.com/vini/friends_relationship.git
+```
+
+```bash
 cd friends_relationship
 ```
 
