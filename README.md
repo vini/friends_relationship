@@ -1,6 +1,6 @@
 ## Friends Relationship
 
-![Vinícius Sant'anna](https://img.shields.io/static/v1?label=NodeJS&message=Friends Relationship&color=green)
+[!Vinícius Sant'anna](https://img.shields.io/static/v1?label=NodeJS&message=Friends Relationship&color=green)]
 
 NodeJS APP to manipulate friends and your relationships, the data has stored in runtime (RAM),
 using a global variable named as "persons".
