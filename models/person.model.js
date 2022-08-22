@@ -34,6 +34,8 @@ function create(newPerson) {
             }
 
             persons.push(newPerson)
+
+            console.log(persons)
     
             resolve(newPerson)    
         })
@@ -58,20 +60,16 @@ function createFriendRelationship(cpf1, cpf2) {
         helper.cpfsShouldBothExist(cpf1, cpf2)
         .then(cpfIdxs => {
 
-            personCpf1 = {
-                "cpf": persons[cpfIdxs[0]].cpf,
-                "name": persons[cpfIdxs[0]].name
-            }
-
-            personCpf2 = {
-                "cpf": persons[cpfIdxs[1]].cpf,
-                "name": persons[cpfIdxs[1]].name
-            }
-
-            persons[cpfIdxs[0]]['friends'].push(personCpf2);                        
-            persons[cpfIdxs[1]]['friends'].push(personCpf1);    
+            if(persons[cpfIdxs[0]]['friends'].indexOf(persons[cpfIdxs[1]].cpf) == -1) {
+                persons[cpfIdxs[0]]['friends'][persons[cpfIdxs[0]]['friends'].length] = persons[cpfIdxs[1]].cpf
+            }                
             
+            if(persons[cpfIdxs[1]]['friends'].indexOf(persons[cpfIdxs[0]].cpf) == -1) {
+                persons[cpfIdxs[1]]['friends'][persons[cpfIdxs[1]]['friends'].length] = persons[cpfIdxs[0]].cpf    
+            }
+
             returnResult = persons
+            
             resolve(returnResult)
 
         })
@@ -94,13 +92,13 @@ function getFriendRecommendations(cpf) {
         .then(person => {
             let recommendations = []
 
-            person['friends'].map(function(item, index) {
+            person['friends'].forEach(function(item, index) {
                 
-                let friendIdx = persons.findIndex(r => r.cpf == item.cpf)
+                let friendIdx = persons.findIndex(r => r.cpf == item)
 
-                persons[friendIdx]['friends'].map(function(subItem, subIndex) {
-                    if(subItem.cpf != item.cpf || subItem.cpf != cpf) {
-                        recommendations.push(subItem.cpf)
+                persons[friendIdx]['friends'].forEach(function(subItem, subIndex) {
+                    if(subItem != item && subItem != cpf) {
+                        recommendations[recommendations.length] = subItem
                     }
                 })
 
