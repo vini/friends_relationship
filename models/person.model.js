@@ -95,7 +95,7 @@ function getFriendRecommendations(cpf) {
                 let friendIdx = persons.findIndex(r => r.cpf == item)
 
                 persons[friendIdx]['friends'].forEach(function(subItem, subIndex) {
-                    if(subItem != item && subItem != cpf) {
+                    if(subItem != item && subItem != cpf && recommendations.indexOf(subItem) == -1) {
                         recommendations[recommendations.length] = subItem
                     }
                 })
