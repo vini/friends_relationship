@@ -34,8 +34,6 @@ function create(newPerson) {
             }
 
             persons.push(newPerson)
-
-            console.log(persons)
     
             resolve(newPerson)    
         })
